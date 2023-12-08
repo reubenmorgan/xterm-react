@@ -88,6 +88,10 @@ function App() {
 export default App;
 ```
 
+## Note on React Strict Mode
+
+When using Reacts strict mode components are rendered twice, this leads to errors with the XTerm.js renderer trying to access the dimensions of the terminals div which is unavailable. To avoid this error disable strict mode by removing the `<React.Strict>` wrapper from our app.
+
 ## License
 
 Distributed under the MIT License. See [LICENSE](https://github.com/reubenmorgan/xterm-react/blob/main/LICENSE) for more information.
